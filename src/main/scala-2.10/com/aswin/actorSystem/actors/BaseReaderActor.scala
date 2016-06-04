@@ -3,7 +3,7 @@ package com.aswin.actorSystem.actors
 import akka.actor.{ActorLogging, ActorRef, Actor}
 
 /**
-  * Created by aswin on 4/6/16.
+  * The Base Actor which divides jobs among the various source actors.
   */
 class BaseReaderActor(twitter: ActorRef, facebook: ActorRef, gitHub: ActorRef) extends Actor
   with ActorLogging {
